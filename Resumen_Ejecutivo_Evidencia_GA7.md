@@ -121,7 +121,8 @@ El proyecto AMCA Java cumple con todos los requisitos de la evidencia y sirve co
 
 ---
 
-**Autor**: Martin ernesto restrepo Palacios  
-**Fecha**: 2025  
+**Autor**: Martin ernesto restrepo Palacios 
+**Ficha**: 2977432 
+**Fecha**: 2025
 **Versión**: 4.0  
 **Estado**: ✅ COMPLETADA 
