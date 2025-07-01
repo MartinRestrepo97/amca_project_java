@@ -117,11 +117,11 @@ La evidencia de desempeño GA7-220501096-AA3-EV01 se ha completado exitosamente,
 3. **Funcionalidad completa**: Sistema operativo con todas las características requeridas
 4. **Documentación**: Evidencia completa con análisis detallado del código
 
-El proyecto AMCA Java ahora cumple con todos los requisitos de la evidencia y sirve como ejemplo de aplicación de escritorio Java bien estructurada y documentada.
+El proyecto AMCA Java cumple con todos los requisitos de la evidencia y sirve como ejemplo de aplicación de escritorio Java bien estructurada y documentada.
 
 ---
 
-**Autor**: AMCA Development Team  
+**Autor**: Martin ernesto restrepo Palacios  
 **Fecha**: 2025  
-**Versión**: 1.0  
+**Versión**: 4.0  
 **Estado**: ✅ COMPLETADA 

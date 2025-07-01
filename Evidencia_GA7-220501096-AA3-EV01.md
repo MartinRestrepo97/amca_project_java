@@ -874,7 +874,7 @@ El módulo desarrollado demuestra competencia en la codificación de software st
 
 ---
 
-**Autor:** AMCA Development Team  
-**Fecha:** 2024  
-**Versión:** 1.0  
+**Autor:** Martin Ernesto Restrepo Palacios
+**Fecha:** 2025  
+**Versión:** 4.0  
 **Proyecto:** Apoyo al Mercado Campesino Agrícola (AMCA) 

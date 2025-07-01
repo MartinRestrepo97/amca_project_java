@@ -151,10 +151,6 @@ La aplicación utiliza archivos CSV simples para la persistencia de datos. Cada 
 - ✅ Implementadas validaciones de entrada
 - ✅ Mejorada interfaz de usuario
 
-## Capturas de Pantalla
-
-*(Aquí puedes insertar capturas de pantalla de la ventana principal y de cada sección para ilustrar el funcionamiento de la aplicación.)*
-
 ## Plan para la migración a Swing
 
 1. **Crear una ventana principal (`MainFrame`)**  
@@ -178,7 +174,7 @@ La aplicación utiliza archivos CSV simples para la persistencia de datos. Cada 
 - `amca/PreparadosFrame.java` — Ventana para gestionar preparados.
 - `amca/SectorProductivoFrame.java` — Ventana para gestionar sectores productivos.
 
-## Ejemplo de cómo se vería la ventana principal
+## cómo se ve la ventana principal
 
 ```java
 public class MainFrame extends JFrame {
@@ -213,19 +209,10 @@ public class MainFrame extends JFrame {
 }
 ```
 
-## Siguiente paso
-
-¿Quieres que cree la estructura de archivos y el código base para estas ventanas Swing, usando tus modelos actuales, para que puedas tener una aplicación de escritorio visual como el ejemplo?  
-Esto incluirá la ventana principal y una ventana de tabla para cada entidad, con datos de ejemplo y botones CRUD (sin persistencia real, solo en memoria).
-
-¿Te gustaría que lo haga todo en la carpeta `src/amca/`? ¿O prefieres otra estructura?
-
-## Cambios visuales recientes (Dashboard tipo cPanel)
+## Cambios visuales (Dashboard tipo cPanel)
 
 - **Sidebar solo texto:** El menú lateral ahora muestra únicamente el nombre de cada módulo (Cultivos, Animales, Preparados, Sector Productivo) en fuente grande y clara, sin emojis ni iconos decorativos.
 - **Barra de acento:** El botón seleccionado en el sidebar se resalta con una barra vertical de color azul a la izquierda, facilitando la identificación de la sección activa.
 - **Diseño profesional y minimalista:** Se eliminaron los emojis y se mejoró la paleta de colores para lograr un aspecto más limpio y corporativo.
 - **Fuente moderna:** Se utiliza una fuente grande y moderna para los textos del sidebar y los títulos de cada módulo.
 - **Experiencia tipo dashboard:** Todo el contenido se muestra en un solo frame, con navegación fluida entre módulos y sin ventanas emergentes adicionales.
-
-Estos cambios mejoran la usabilidad y la apariencia visual, alineando la aplicación con estándares modernos de dashboards administrativos. 

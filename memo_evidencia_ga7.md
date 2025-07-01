@@ -107,12 +107,6 @@ Desarrollar la evidencia de desempeño GA7-220501096-AA3-EV01 "Codificación de 
 5. **Relación con artefactos del ciclo de vida**: Documentado en la evidencia
 6. **Funcionalidad completa**: CRUD operativo con persistencia de datos
 
-## Notas Importantes
-- El proyecto ya tenía una estructura MVC básica que se mejoró significativamente
-- Se mantuvieron las funcionalidades existentes mientras se aplicaron mejoras
-- Se corrigió un error crítico en CultivosFrame.java (método listaCultivos → obtenerListaCultivos)
-- La aplicación es completamente funcional y cumple con todos los requisitos de la evidencia
-
 ## Estado Final
 **✅ EVidencia GA7-220501096-AA3-EV01 COMPLETADA EXITOSAMENTE**
 
@@ -124,9 +118,3 @@ El proyecto AMCA Java ahora cumple completamente con los requisitos de la eviden
 - Funcionalidad CRUD completa
 - Validaciones de entrada robustas
 - Interfaz de usuario mejorada 
-
-## Verificación Profunda (Abril 2024)
-- Se realizó una revisión exhaustiva del código, la documentación y los archivos de evidencia.
-- El README.md, los memos y el documento de evidencia reflejan fielmente el estado y mejoras del proyecto.
-- Todas las funcionalidades, validaciones y estándares de codificación están implementados y documentados.
-- El proyecto cumple completamente con los requisitos de la evidencia y está listo para su entrega o auditoría 
