@@ -875,6 +875,7 @@ El módulo desarrollado demuestra competencia en la codificación de software st
 ---
 
 **Autor:** Martin Ernesto Restrepo Palacios
+**Ficha:** 2977432
 **Fecha:** 2025  
 **Versión:** 4.0  
 **Proyecto:** Apoyo al Mercado Campesino Agrícola (AMCA) 
