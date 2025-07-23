@@ -54,6 +54,15 @@ public class MainFrame extends JFrame {
         sidebar.add(createSidebarPanel("Preparados"));
         sidebar.add(Box.createVerticalStrut(10));
         sidebar.add(createSidebarPanel("Sector Productivo"));
+        sidebar.add(Box.createVerticalStrut(30));
+        // Botones de prueba
+        sidebar.add(createSidebarTestPanel("Prueba Cultivos", CultivosPruebaFrame.class));
+        sidebar.add(Box.createVerticalStrut(5));
+        sidebar.add(createSidebarTestPanel("Prueba Animales", AnimalesPruebaFrame.class));
+        sidebar.add(Box.createVerticalStrut(5));
+        sidebar.add(createSidebarTestPanel("Prueba Preparados", PreparadosPruebaFrame.class));
+        sidebar.add(Box.createVerticalStrut(5));
+        sidebar.add(createSidebarTestPanel("Prueba Sector", SectorProductivoPruebaFrame.class));
         sidebar.add(Box.createVerticalGlue());
 
         // Panel principal con CardLayout
@@ -150,6 +159,34 @@ public class MainFrame extends JFrame {
             }
         }
         currentSection = section;
+    }
+
+    // Agregar método para crear panel de prueba en la barra lateral
+    private JPanel createSidebarTestPanel(String label, Class<?> frameClass) {
+        JPanel panel = new JPanel();
+        panel.setLayout(new BorderLayout());
+        JButton btn = new JButton(label);
+        btn.setBackground(new Color(255, 193, 7));
+        btn.setForeground(Color.BLACK);
+        btn.setFocusPainted(false);
+        btn.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        btn.setBorder(BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        btn.addActionListener(e -> {
+            try {
+                Object frameObj = frameClass.getDeclaredConstructor().newInstance();
+                JPanel contentPanel = (JPanel) frameClass.getMethod("getContentPanel").invoke(frameObj);
+                JFrame testFrame = new JFrame(label);
+                testFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                testFrame.setSize(600, 400);
+                testFrame.setLocationRelativeTo(null);
+                testFrame.setContentPane(contentPanel);
+                testFrame.setVisible(true);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Error al abrir la interfaz de prueba: " + ex.getMessage());
+            }
+        });
+        panel.add(btn, BorderLayout.CENTER);
+        return panel;
     }
 
     public static void main(String[] args) {

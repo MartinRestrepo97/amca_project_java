@@ -1,0 +1,28 @@
+# ⚙️ Managing Backlog and Work-In-Progress Tasks
+
+This document defines the standard for handling incomplete code or features. The goal is to make work in progress visible and prevent unfinished code from being integrated into the `develop` branch.
+
+---
+
+### 1. **Markers in Code**
+- **`// TODO:`**: For planned features that have not yet been implemented. A brief description of what is missing should be included.
+- _Example:_ `// TODO: Implement date validation on this form.`
+- **`// FIXME:`**: For code that works but has a known issue or is suboptimal. It requires a fix.
+
+- _Example:_ `// FIXME: This loop is inefficient and causes high memory consumption with more than 1000 elements.`
+
+---
+
+### 2. **Status in Documentation (`.md`)**
+- A component's documentation (`.md`) file **MUST** reflect its current state in the `## trạng thái` section.
+- **Allowed State Values:**
+- **`In Development`**: The component is actively being built. It is not stable.
+- **`Functional`**: The component fulfills its primary function but may have pending `FIXME`s or `TODO`s.
+- **`Completed`**: The component is finalized, tested, and ready for production.
+- **`Deprecated`**: The component should no longer be used and will be removed in a future release.
+
+---
+
+### 3. **Git Branches**
+- All work in progress **MUST** be done on a `feature/` or `fix/` branch.
+- A branch should not be merged into `develop` if it still contains `// TODO:` tags critical to core functionality or `// FIXME:` tags that break stability.

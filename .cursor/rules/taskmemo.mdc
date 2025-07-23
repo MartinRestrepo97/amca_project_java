@@ -1,0 +1,45 @@
+# 📄 [Component/File Name]
+
+**Author:** [Your Name/Alias or 'AI Assistant']
+**Creation Date:** YYYY-MM-DD
+
+---
+
+### 1. **🎯 Purpose**
+*A clear and concise description of what this file/component does and why it exists. What problem does it solve?*
+
+---
+
+### 2. **🔗 Dependencies**
+*List of other components, modules, or external libraries that this file needs to function.*
+- **Internal:**
+- [InternalComponentName]
+- **External:**
+- [ExternalLibraryName]
+
+---
+
+### 3. **⚙️ Functionality and/or Props**
+*Detailed description of the functions, methods, or properties (props) it exposes.*
+
+| Name | Type | Description | Required | Default Value |
+| :--- | :--- | :---: | :--- |
+| `ExampleProp` | `String` | Describes the function of this prop. | Yes | `N/A` |
+| `onClick` | `Function` | Function that executes when clicked. | No | `() => {}` |
+
+---
+
+### 4. **💻 Usage Example**
+*A code block that shows how to import and use this component/function in a typical situation.*
+
+```javascript
+import [ComponentName] from './[ComponentName]';
+
+function App() {
+return (
+<[ComponentName]
+propExample="Hello World"
+onClick={() => console.log('Clicked!')}
+/>
+);
+}

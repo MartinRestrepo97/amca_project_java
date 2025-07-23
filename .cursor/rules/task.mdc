@@ -1,0 +1,44 @@
+# 📜 General Project Rules
+
+This document establishes the fundamental rules that all developers and contributing AI **MUST** follow to maintain project consistency, readability, and scalability.
+
+---
+
+### 1. **Project Philosophy**
+- **Order and Clarity:** Every line of code, every component, and every file has a purpose. Clarity is more important than cleverness.
+- **Active Documentation:** Documentation is not an afterthought; it is an integral part of development. A component without its `.md` file is considered incomplete.
+- **Single Responsibility:** Every file or component must have a single, well-defined responsibility.
+
+---
+
+### 2. **Directory Structure and Naming**
+- **Components:** `src/components/[ComponentName]/[ComponentName].jsx`
+- **Styles:** `src/components/[ComponentName]/[ComponentName].css`
+- **Documentation:** `src/components/[ComponentName]/[ComponentName].md` (See `task_memo.md`)
+- **File Naming:** Use `kebab-case` for file names (`my-new-component.js`).
+- **Component/Class Naming:** Use `PascalCase` for components and classes (`MyNewComponent`).
+- **Variable/Function Naming:** Use `camelCase` for variables and functions (`myNewFunction`).
+
+---
+
+### 3. **🤖 Golden Rule for AI**
+- **Documentation Mandate:** Upon detecting the creation of a new component, service, or utility file (e.g., `.js`, `.jsx`, `.ts`, `.tsx`, `.py`), the AI **MUST** automatically create an associated `.md` file in the same directory.
+- **File Contents:** This `.md` file **MUST** follow the strict template defined in `task_memo.md`.
+- **Logging:** The AI will log the file's purpose, its dependencies, its main functionality, and a basic usage example.
+
+---
+
+### 4. **Version Control (Git)**
+- **Semantic Commits:** All commit messages **MUST** follow the Conventional Commit convention.
+- `feat:` for new features.
+- `fix:` for bug fixes.
+- `docs:` for documentation changes.
+- `style:` for formatting and style changes.
+- `refactor:` for code refactoring.
+- `test:` for adding or fixing tests.
+- `chore:` for maintenance tasks.
+- **Branches:**
+- `main`: Production branch. Merges only from `develop`.
+- `develop`: Main integration branch.
+- `feature/[feature-name]`: For new features.
+- `fix/[bug-name]`: For bug fixes.

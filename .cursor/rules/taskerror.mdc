@@ -1,0 +1,31 @@
+# 🐞 Reglas para el Manejo de Errores
+
+Un manejo de errores robusto y consistente es fundamental para la estabilidad del sistema. Este documento establece las directrices para la gestión de errores.
+
+---
+
+### 1. **Captura y Lanzamiento de Errores**
+- **No Silenciar Errores:** Nunca ignores un error capturado en un bloque `catch` vacío. Como mínimo, el error debe ser registrado en la consola durante el desarrollo.
+- **Errores Específicos:** Evita lanzar errores genéricos (`throw new Error("Algo salió mal")`). Crea o utiliza clases de error específicas que describan el problema.
+  - _Ejemplo:_ `throw new ValidationError("El correo electrónico no es válido.")`
+- **Uso de `try...catch`:** Utiliza bloques `try...catch` para operaciones que puedan fallar, como llamadas a API, operaciones de archivo o parseo de datos.
+
+---
+
+### 2. **Registro de Errores (Logging)**
+- **Niveles de Log:**
+  - `ERROR`: Para errores críticos que interrumpen el flujo de la aplicación.
+  - `WARN`: Para advertencias sobre problemas potenciales que no detienen la aplicación.
+  - `INFO`: Para información general sobre el flujo de la aplicación.
+  - `DEBUG`: Para información detallada útil solo durante la depuración.
+- **Información del Log:** Un log de error **DEBE** incluir:
+  - Marca de tiempo.
+  - Mensaje de error claro.
+  - Stack trace (si es posible).
+  - Contexto relevante (e.g., ID de usuario, datos de entrada).
+
+---
+
+### 3. **Documentación de Errores Conocidos**
+- El archivo `.md` de cada componente **DEBE** documentar los errores conocidos o las excepciones que puede lanzar en la sección `## 🐛 Errores Conocidos / Excepciones`.
+- Esto ayuda a otros desarrolladores a anticipar y manejar correctamente los fallos al usar el componente.
