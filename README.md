@@ -178,7 +178,6 @@ La aplicación utiliza archivos CSV simples para la persistencia de datos. Cada 
 - ✅ Mejorado manejo de errores
 - ✅ Implementadas validaciones de entrada
 - ✅ Mejorada interfaz de usuario
-- ✅ Mejorada interfaz del frontend
 
 ## Plan para la migración a Swing
 
