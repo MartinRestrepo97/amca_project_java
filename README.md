@@ -77,6 +77,7 @@ Este proyecto incluye la implementación completa de la evidencia de desempeño 
 - ✅ **Comentarios Javadoc**: Documentación completa de todas las clases y métodos públicos
 - ✅ **Estructura de Código**: Separación de responsabilidades siguiendo el patrón MVC
 - ✅ **Validaciones**: Verificación de entrada de datos y manejo de errores robusto
+- complete
 
 #### 2. Frameworks y Tecnologías Aplicadas
 - **Java Swing**: Framework de interfaz gráfica para aplicaciones de escritorio
